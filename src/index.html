@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css">
 
 </head>
+<style>
+    .saad {
+        color: blue;
+    }
+</style>
 
 <body class="font-sans">
 
@@ -18,7 +24,16 @@
         <div class="container mx-auto py-0 px-0 md:px-40 absolute z-10 ">
 
             <div class="flex justify-between items-center bg-white ">
-                <h1 class="text-xl md:text-xl font-bold text-left bg-white px-4 text-green-800">Sugar Balance</h1>
+                <h1 class="text-xl md:text-xl font-bold text-left bg-white px-4 text-green-800" id="app">Sugar Balance
+                </h1>
+                <div class="text-black flex-col justify-center items-center flex">
+                    <h1 class="saad">Saad</h1>
+                    <button id="changeTextButton" class="bg-red-400 px-2 rounded-full text-white"> Click me to change
+                        text</button>
+                    <p id="textToChange"> This text will be changed</p>
+                    <!-- <button id="popupButton">Click me for a popup</button> -->
+
+                </div>
                 <div class="flex space-x-4">
                     <img src="/public/images/moneyBack.jpg" alt="Full-width Image" class="w-20 md:w-32 mb-0">
                     <img src="/public/images/freeShip.jpg" alt="Full-width Image" class="w-10 md:w-16  mb-0">
@@ -280,6 +295,8 @@
             <p> Copyright 2021 &copy; Sugar Balance Discounts Site | All rights reserved</p>
         </div>
     </footer>
+
 </body>
 
 </html>
+<script src="script.js"></script>
